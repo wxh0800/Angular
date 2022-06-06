@@ -16,7 +16,7 @@ export class HeroesComponent implements OnInit {
   //   name : "Windstorm"
   // }
   heroes: Hero[] =[]
-  selectedHero: Hero |null =null;
+  // selectedHero: Hero |null =null;
 
   // 依赖注入
   constructor(private heroService:HeroService) {
@@ -30,7 +30,7 @@ export class HeroesComponent implements OnInit {
   getHeros():void {
     this.heroService.getHeroes().subscribe(heroes => this.heroes=heroes)
   }
-  onSelect(hero: Hero) : void  {
-    this.selectedHero = hero
-  }
+  // onSelect(hero: Hero) : void  {
+  //   this.selectedHero = hero
+  // }
 }
